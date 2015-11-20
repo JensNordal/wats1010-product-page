@@ -1,8 +1,21 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
-
+.navbar {
+	height: 85px;
+}
+.navbar-brand img {
+	width: 65px;
+	height: auto;
+	vertical-align: middle;
+}
+#bs-example-navbar-collapse-1 {
+	vertical-align: middle;
+	line-height: 15px;
+	padding: 20px 150px 20px 0;
+	font-weight: bold;
+}
 body {
-    padding-top: 30px;
+    padding-top: 85px;
     padding-bottom: 20px;
     color: green;
 }

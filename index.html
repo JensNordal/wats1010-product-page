@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
+        <meta name="description" content="API Superstore - Quick and easy access to APIs from all over the web!"><!-- TODO: Add proper head tag to provide a page description for search
              engines. -->
         <title>API Superstore</title>
         <!-- Bootstrap CSS Framework -->
@@ -18,6 +18,7 @@
              "Javascript" on the Bootstrap documentation site. -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="main.css">
         <!-- End Bootstrap CSS Framework -->
 
         <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
@@ -27,11 +28,38 @@
 
     </head>
     <body>
+		<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container-fluid">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+   	 	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+       			<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      	<a class="navbar-brand" href="#"><img src="assets/logos/api_superstore_sqlogo_ry.png" width="40px" height="auto" alt="API Superstore Logo"></a>
+    	</div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about-us">ABOUT US</a></li>
+		<li><a href="#take-a-tour">TAKE A TOUR</a></li>
+		<li><a href="#features">FEATURES</a></li>
+		<li><a href="#testimonials">TESTIMONIALS</a></li>
+		<li><a href="#contact-us">CONTACT US</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  	</div><!-- /.container-fluid -->
+	</nav>
+	</header>
         <!-- Note: If you do not see a lamp icon in the heading below
              when you view this file in a web browser, then there is an issue
              with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
-        <!-- TODO: Populate this page with all the content you deem
+    	
+		 <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
+		<!-- TODO: Populate this page with all the content you deem
              necessary to create a compelling product page! -->
 
         <!-- TODO: Create an area to put the explainer video. -->
@@ -50,5 +78,7 @@
 
         <!-- TODO: Create a call to action link to get users to sign up for the
              service. -->
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     </body>
 </html>
