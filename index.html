@@ -21,15 +21,29 @@
 		<link rel="stylesheet" href="main.css">
         <!-- End Bootstrap CSS Framework -->
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="favicon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
     </head>
     <body>
 		<header>
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="navbar">
   		<div class="container-fluid">
     	<!-- Brand and toggle get grouped for better mobile display -->
    	 	<div class="navbar-header">
@@ -39,21 +53,29 @@
        			<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
       		</button>
-      	<a class="navbar-brand" href="#"><img src="assets/logos/api_superstore_sqlogo_ry.png" width="40px" height="auto" alt="API Superstore Logo"></a>
+      	<a class="navbar-brand" href="#"><img src="assets/logos/api_superstore_sqlogo_ry.png" alt="API Superstore Logo"></a>
     	</div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about-us">ABOUT US</a></li>
-		<li><a href="#take-a-tour">TAKE A TOUR</a></li>
-		<li><a href="#features">FEATURES</a></li>
-		<li><a href="#testimonials">TESTIMONIALS</a></li>
-		<li><a href="#contact-us">CONTACT US</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      		<ul class="nav navbar-nav navbar-right" id="navbar-right">
+        		<li><a href="#about-us">ABOUT US</a></li>
+				<li><a href="#take-a-tour">TAKE A TOUR</a></li>
+				<li><a href="#features">FEATURES</a></li>
+				<li><a href="#testimonials">TESTIMONIALS</a></li>
+				<li><a href="#contact-us">CONTACT US</a></li>
+      		</ul>
+    	</div><!-- /.navbar-collapse -->
   	</div><!-- /.container-fluid -->
 	</nav>
 	</header>
+	<div class="header-intro">
+		<section class="intro"><!--<img src="images/desktop-keyboard-mouse-tablet.jpg" alt="Header photo">-->
+			<h1>API Superstore</h1>
+			<h2>Instant Access to Cutting-Edge APIs!</h2>
+			<h4 class="sign-up_button">Sign Up</h4>
+			<h4 class="take-a-tour_button"><span class="glyphicon glyphicon-play-circle"></span>Take a Tour</h4>
+		</section>
+	</div>
         <!-- Note: If you do not see a lamp icon in the heading below
              when you view this file in a web browser, then there is an issue
              with how Bootstrap is linked to this page. -->
