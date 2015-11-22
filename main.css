@@ -34,7 +34,7 @@
 #navbar-right {
 	vertical-align: middle;
 	line-height: 15px;
-	padding: 20px 150px 20px 0;
+	padding: 20px 50px 20px 0;
 	font-weight: bold;
 }
 #navbar-right li a {
@@ -112,7 +112,7 @@
 	color: #CC3333;
 	font-weight: bold;
 	
-	-webkit-animation: cssAnimation 0.75s 1 ease-in-out;
+	-webkit-animation: cssAnimation 1s 1 ease-in-out;
 }
 	@-webkit-keyframes cssAnimation {
 		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
