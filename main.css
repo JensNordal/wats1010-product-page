@@ -1,7 +1,10 @@
-/* Styles for Product Page Customization */
+ /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
 /*--- Begin Header Styling ---*/
+.page-header {
+	margin: 0;
+}
 .navbar-custom {
 	height: 85px;
 	background: rgba(0, 0, 0, 0.4);
@@ -11,6 +14,7 @@
 	width: 65px;
 	height: auto;
 	vertical-align: middle;
+	margin-left: 15px;
 }
 .navbar-custom:after {
   	content: "";
@@ -125,13 +129,93 @@
 
 /*--- Begin Body Style ---*/
 body {
-    padding: 0 0 20px 0;
+    padding: 0;
+	margin: 0;
     color: black;
+}
+html {
+	padding: 0;
+	margin: 0;
 }
 /*--- End Body Style ---*/
 
+.product-description {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 50px 70px 50px 70px;
+}
+
+.sign-up-and-save_button {
+	font: bold 20px sans-serif;
+	color: white;
+	position: absolute;
+	left: 42%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	padding: 15px 35px 15px 35px;
+	margin: 30px 0 30px 0;
+	border-radius: 22px;
+}
+.sign-up-and-save_button:hover,
+.sign-up-and-save_button:focus {
+	color: #CC3333;
+	font-weight: bold;
+	
+	-webkit-animation: cssAnimation 1s 1 ease-in-out;
+}
+	@-webkit-keyframes cssAnimation {
+		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+		to { -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px); }
+}
+.sign-up-and-save_button:active {
+	color: #eee;
+}
+
+.video {
+	width: 100%;
+	height: auto;
+	padding: 70px 0 70px 0;
+}
+.our-features {
+	font: 42px sans-serif;
+}
+.testimonials {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	background: #62CDB7;
+}
+.feature-blocks {
+	background: ;
+}
+
+
 /*--- Begin General Styling ---*/
-a:after {
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+.container-fluid .row {
+	margin-top: 0;
+	font: bold 32px impact,sans-serif;
+	text-align: center;
+	width: 100%;
+}
+
+h4 a {
+	color: white;
+}
+h4 a:hover,
+h4 a:focus {
+	color: #CC3333;
+	font-weight: bold;
+	text-decoration: none;
+}
+h4 a:active {
+	color: #eee;
+}
+
+.navbar-right a:after {
   	content: "";
   	position: absolute;
   	width: 100%;
@@ -145,9 +229,113 @@ a:after {
   -webkit-transition: all 0.3s ease-in-out 0s;
   	transition: all 0.3s ease-in-out 0s;
 }
-a:hover:after {
+.navbar-right a:hover:after {
   	visibility: visible;
   -webkit-transform: scaleX(1);
   	transform: scaleX(1); 
 }
 /*--- End General Styling ---*/
+
+.panel-body {
+	font: 16px arial, sans-serif;
+}
+.feature-blocks {
+	padding: 50px 70px 50px 70px; 
+}
+.call-to-action {
+	padding: 50px 70px 50px 70px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.give-us-a-try_button {
+	font: bold 20px sans-serif;
+	color: white;
+	position: absolute;
+	left: 42%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	padding: 15px 35px 15px 35px;
+	margin: 30px 0 30px 0;
+	border-radius: 22px;
+}
+.give-us-a-try_button:hover,
+.give-us-a-try_button:focus {
+	color: #CC3333;
+	font-weight: bold;
+	
+	-webkit-animation: cssAnimation 1s 1 ease-in-out;
+}
+	@-webkit-keyframes cssAnimation {
+		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+		to { -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px); }
+}
+.give-us-a-try_button:active {
+	color: #eee;
+}
+
+.footer {
+	margin: 70px 0 0 0;
+	padding: 50px 70px 10px 70px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background: #000000;
+	color: #ffffff;
+}
+.footer p {
+	clear: left;
+}
+.footer-brand img {
+	width: 85px;
+	height: auto;
+}
+.footer li {
+	list-style-type: none;
+}
+
+.navbar-footer a:after {
+  	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+ 	background-color: #fff;
+  	visibility: hidden;
+  -webkit-transform: scaleX(0);
+ 	transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+}
+.navbar-footer a:hover:after {
+  	visibility: visible;
+  -webkit-transform: scaleX(1);
+  	transform: scaleX(1); 
+}
+#navbar-footer {
+	vertical-align: middle;
+	line-height: 15px;
+	padding: 20px 50px 20px 350px;
+	font-weight: bold;
+	background: #000000;
+}
+#navbar-footer li a {
+	font-family: sans-serif;
+	color: white;
+	display: block;
+	position: relative;
+	text-shadow: none;
+}
+#navbar-footer li a:hover,
+#navbar-footer li a:focus {
+	color: #ccc;
+	background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+#navbar-footer li a:active {
+	color: #ccc;
+	background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.bg-gray {
+	background: #666666;
+}
