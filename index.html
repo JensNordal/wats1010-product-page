@@ -4,18 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="API, HTML, CSS, Buy, Access, Maps, E-commerce">
         <meta name="description" content="API Superstore - Quick and easy access to APIs from all over the web!"><!-- TODO: Add proper head tag to provide a page description for search
              engines. -->
         <title>API Superstore</title>
         <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
-
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
 		<link rel="stylesheet" href="main.css">
@@ -55,8 +48,7 @@
       		</button>
       	<div class="navbar-brand"><img src="assets/logos/api_superstore_sqlogo_ry.png" alt="API Superstore Logo"></div>
     	</div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
       		<ul class="nav navbar-nav navbar-right" id="navbar-right">
         		<li><a href="#about-us">ABOUT US</a></li>
 				<li><a href="#take-a-tour">TAKE A TOUR</a></li>
@@ -68,15 +60,15 @@
   	</div><!-- /.container-fluid -->
 	</nav>
 		<div class="header-intro">
-		<section class="intro"><!--<img src="images/desktop-keyboard-mouse-tablet.jpg" alt="Header photo">-->
-			<h1>API Superstore</h1>
-			<h2>Instant Access to Cutting-Edge APIs!</h2>
-			<h4 class="sign-up_button"><a href="#sign-up">Sign Up</a></h4>
-			<h4 class="take-a-tour_button"><a href="#take-a-tour"><span class="glyphicon glyphicon-play-circle"></span> Take a Tour</a></h4>
-		</section>
+			<section class="jumbotron">
+				<h1>API Superstore</h1>
+				<h2>Instant Access to Cutting-Edge APIs!</h2>
+				<h4 class="sign-up_button"><a href="#sign-up">Sign Up</a></h4>
+				<h4 class="take-a-tour_button"><a href="#take-a-tour"><span class="glyphicon glyphicon-play-circle"></span> Take a Tour</a></h4>
+			</section>
+		</div>
 	</div>
-	</div>
-		   <!-- TODO: Create an area to put the long product description. -->
+		
 	<section class="product-description bg-white" id="take-a-tour">
 		<div class="product-description"</div>
 			<div class="container-fluid">
@@ -92,17 +84,8 @@ We’ve partnered with hundreds of API providers from across the Web to give you
 			<h4 class="sign-up-and-save_button"><a href="#sign-up"> Sign Up and Save!</a></h4>	
 		</div>
 	</section>
-			
-		<!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
-    	
 		
-		<!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
-
-        <!-- TODO: Create an area to put the explainer video. -->
-	<section class="video bg-gray">
+	<section class="video-section bg-gray">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5 col-sm-6 col-xs-12  wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
@@ -113,14 +96,14 @@ We’ve partnered with hundreds of API providers from across the Web to give you
   							<li class="list-group-item">Convenient catalog</li>
 							<li class="list-group-item">Elegant shopping experience</li>
 						</ul>
-                        <a href="#sign-up" class="btn btn-default">Sign Up</a>
                  </div>
-				<div><iframe width="620" height="415" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreeen></iframe>
+				 <div class="video-box">
+					<iframe width="620" height="415" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreeen></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
-		<!-- TODO: Create an area to put customer testimonials. -->
+		
 	<section class="testimonials bg-white">
 		<div class="container-fluid">
 			<div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -148,8 +131,7 @@ We’ve partnered with hundreds of API providers from across the Web to give you
       		<img src="images/testimonials-bg3.jpg" alt="Customer testimonial: This is the best website ever! - C.P. Yu, AmazingSite.com">
     		</div>
   		</div>
-
-  			<!-- Controls -->
+  			<!-- Slide Controls -->
   			<a class="left carousel-control" href="#carousel-testimonials" role="button" data-slide="prev">
     		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     		<span class="sr-only">Previous</span>
@@ -161,16 +143,14 @@ We’ve partnered with hundreds of API providers from across the Web to give you
 		</div>
 		</div>
 	</section>
-
-
-
-        <!-- TODO: Create an area to show features. -->
+		
 		<section class="feature-blocks">
 			<div class="container-fluid">
 				<div class="row">
   				<div class="col-md-4">
 					<div class="panel panel-default">
   					<div class="panel-body">
+    					<img src="images/mouse.png" alt="Mouse Icon" class="feature-icons"><br>
     					Our huge API catalog is free to search so you can easily find your APIs and move on with your day.
   					</div>
   					<div class="panel-footer">Easy</div>
@@ -178,13 +158,15 @@ We’ve partnered with hundreds of API providers from across the Web to give you
 					</div>
   				<div class="col-md-4"><div class="panel panel-default">
   					<div class="panel-body">
-    					Found your APIs? Great! Our lightning-fast interface lets you implement them straight into your projects -- in a heartbeat!
+    					<img src="images/rocket.png" alt="Rocket Icon" class="feature-icons"><br>
+						Found your APIs? Great! Our lightning-fast interface lets you implement them straight into your projects -- in a heartbeat!
   					</div>
   					<div class="panel-footer">Fast</div>
 					</div>
 					</div>
   				<div class="col-md-4"><div class="panel panel-default">
   					<div class="panel-body">
+						<img src="images/clock.png" alt="Clock Icon" class="feature-icons"><br>
 						Our elegant shopping experience takes instant payment for your links by credit, check, IOU, wire transfer, PayPal, or livestock trade!  					</div>
   				<div class="panel-footer">Hassle Free</div>
 			</div>
@@ -192,8 +174,6 @@ We’ve partnered with hundreds of API providers from across the Web to give you
 			</div>
 		</section>
 		
-		<!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
 			<section class="call-to-action">
 				<div class="container-fluid">
 					<h1>What are you waiting for?</h1>
@@ -202,32 +182,42 @@ We’ve partnered with hundreds of API providers from across the Web to give you
 				</div>
 			</section>
 
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
 			<section class="footer">
-			<div class="container-fluid">
-				<div class="footer-brand"><img src="assets/logos/api_superstore_sqlogo_ry.png" alt="API Superstore Logo"></div>
-				<div class="">
-					<ul>
-						<li>Phone: (206) 555-1234</li>
-						<li>Email: info@apisuperstore.com</li>
-						<li>Location: Seattle, Washington, USA</li>
-					<ul>
-				</div>
+				<div class="navbar-footer">
 				<ul class="nav navbar-nav navbar-footer navbar-custom" id="navbar-footer">
-        		<li><a href="#about-us">ABOUT US</a></li>
-				<li><a href="#take-a-tour">TAKE A TOUR</a></li>
-				<li><a href="#features">FEATURES</a></li>
-				<li><a href="#testimonials">TESTIMONIALS</a></li>
-				<li><a href="#contact-us">CONTACT US</a></li>
-      		</ul>
-				<p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2015 - Jens Nordal</p>
+        			<li><a href="#about-us">ABOUT US</a></li>
+					<li><a href="#take-a-tour">TAKE A TOUR</a></li>
+					<li><a href="#features">FEATURES</a></li>
+					<li><a href="#testimonials">TESTIMONIALS</a></li>
+					<li><a href="#contact-us">CONTACT US</a></li>
+				</ul>
+				</div>
+			<div class="container-fluid">
+				<div class="row">
+  					<div class="col-md-4 footer-brand"><img src="assets/logos/api_superstore_sqlogo_ry.png" alt="API Superstore Logo"></div>
+ 						<div class="col-md-4 contact">
+	  						<ul>
+								<li>Phone: (206) 555-1234</li>
+								<li>Email: info@apisuperstore.com</li>
+								<li>Location: Seattle, Washington, USA</li>
+								<ul>
+						</div>
+		    				<div class="col-md-4 social-icons">
+								<ul>
+									<li><a href="http://www.facebook.com"><img src="images/facebook.png"></a></li>
+									<li><a href="http://www.twitter.com"><img src="images/twitter.png"></a></li>
+									<li><a href="http://www.google.com"><img src="images/google.png"></a></li>
+									<li><a href="http://www.pinterest.com"><img src="images/pinterest.png"></a></li>
+									<li><a href="mailto:"><img src="images/mail.png"></a></li>
+								</ul>	
+							</div>
+					</div>
+				</div>
 			</div>
-			</section>
-        
+			<div class="copyright">
+				<p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2015 - Jens Nordal (Imaginary product page.)</p>
+			</div>
+			</section>     
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

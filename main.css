@@ -1,5 +1,4 @@
- /* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
+ /* Styles for Imaginary Product Page Customization */
 
 /*--- Begin Header Styling ---*/
 .page-header {
@@ -57,7 +56,10 @@
 	color: #ccc;
 	background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
 }
-.intro {
+.navbar-collapse ul li a {
+	color: black;
+}
+.jumbotron {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/desktop-keyboard-mouse-tablet.jpg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -139,57 +141,6 @@ html {
 }
 /*--- End Body Style ---*/
 
-.product-description {
-	width: 100%;
-	height: auto;
-	text-align: center;
-	padding: 50px 70px 50px 70px;
-}
-
-.sign-up-and-save_button {
-	font: bold 20px sans-serif;
-	color: white;
-	position: absolute;
-	left: 42%;
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-	padding: 15px 35px 15px 35px;
-	margin: 30px 0 30px 0;
-	border-radius: 22px;
-}
-.sign-up-and-save_button:hover,
-.sign-up-and-save_button:focus {
-	color: #CC3333;
-	font-weight: bold;
-	
-	-webkit-animation: cssAnimation 1s 1 ease-in-out;
-}
-	@-webkit-keyframes cssAnimation {
-		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
-		to { -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px); }
-}
-.sign-up-and-save_button:active {
-	color: #eee;
-}
-
-.video {
-	width: 100%;
-	height: auto;
-	padding: 70px 0 70px 0;
-}
-.our-features {
-	font: 42px sans-serif;
-}
-.testimonials {
-	width: 100%;
-	height: auto;
-	padding: 0;
-	background: #62CDB7;
-}
-.feature-blocks {
-	background: ;
-}
-
-
 /*--- Begin General Styling ---*/
 .container-fluid {
 	margin: 0;
@@ -236,17 +187,30 @@ h4 a:active {
 }
 /*--- End General Styling ---*/
 
-.panel-body {
-	font: 16px arial, sans-serif;
+/*--- Begin Button Styling ---*/
+.sign-up-and-save_button {
+	font: bold 20px sans-serif;
+	color: white;
+	position: absolute;
+	left: 42%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	padding: 15px 35px 15px 35px;
+	margin: 30px 0 30px 0;
+	border-radius: 22px;
 }
-.feature-blocks {
-	padding: 50px 70px 50px 70px; 
+.sign-up-and-save_button:hover,
+.sign-up-and-save_button:focus {
+	color: #CC3333;
+	font-weight: bold;
+	
+	-webkit-animation: cssAnimation 1s 1 ease-in-out;
 }
-.call-to-action {
-	padding: 50px 70px 50px 70px;
-	width: 100%;
-	height: auto;
-	text-align: center;
+	@-webkit-keyframes cssAnimation {
+		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+		to { -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px); }
+}
+.sign-up-and-save_button:active {
+	color: #eee;
 }
 .give-us-a-try_button {
 	font: bold 20px sans-serif;
@@ -272,10 +236,67 @@ h4 a:active {
 .give-us-a-try_button:active {
 	color: #eee;
 }
+/*--- End Button Styling ---*/
 
+/*--- Begin Body Sections ---*/
+.product-description {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 50px 70px 80px 70px;
+}
+.video-section {
+	width: 100%;
+	height: auto;
+	padding: 70px 0 70px 0;
+}
+.our-features {
+	font: 42px sans-serif;
+	color: white;
+}
+.list-group-item {
+	background: #666666;
+	border: none;
+	width: 325px;
+	color: white;
+}
+.list-group li::before {
+	content: url('images/arrow.png');
+	padding-right: 10px;
+}
+.testimonials {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	background: #62CDB7;
+}
+.panel-body {
+	font: 16px arial, sans-serif;
+	height: 170px;
+}
+.feature-blocks {
+	padding: 80px 70px 80px 70px;
+}
+.feature-icons {
+	width: 65px;
+	height: auto;
+	padding-bottom: 20px;
+}
+.call-to-action {
+	padding: 50px 70px 80px 70px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.bg-gray {
+	background: #666666;
+}
+/*--- End Body Sections ---*/
+
+/*--- Begin Footer ---*/
 .footer {
 	margin: 70px 0 0 0;
-	padding: 50px 70px 10px 70px;
+	padding: 30px 70px 20px 70px;
 	width: 100%;
 	height: auto;
 	text-align: center;
@@ -285,14 +306,26 @@ h4 a:active {
 .footer p {
 	clear: left;
 }
+.footer .container-fluid .row {
+	font: 16px sans-serif;
+	line-height: 1.6;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
 .footer-brand img {
 	width: 85px;
 	height: auto;
 }
+.footer-brand {
+	text-align: left;
+}
 .footer li {
 	list-style-type: none;
 }
-
+.social-icons ul li {
+	display: inline;
+	padding: 0;
+}
 .navbar-footer a:after {
   	content: "";
   	position: absolute;
@@ -315,7 +348,7 @@ h4 a:active {
 #navbar-footer {
 	vertical-align: middle;
 	line-height: 15px;
-	padding: 20px 50px 20px 350px;
+	padding: 0px 50px 70px 350px;
 	font-weight: bold;
 	background: #000000;
 }
@@ -335,7 +368,5 @@ h4 a:active {
 	color: #ccc;
 	background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
 }
+/*--- End Footer ---*/
 
-.bg-gray {
-	background: #666666;
-}
