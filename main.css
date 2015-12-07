@@ -1,5 +1,63 @@
  /* Styles for Imaginary Product Page Customization */
 
+/*--- Begin Body Style ---*/
+body {
+    padding: 0;
+	margin: 0;
+    color: black;
+}
+html {
+	padding: 0;
+	margin: 0;
+}
+/*--- End Body Style ---*/
+
+/*--- Begin General Styling ---*/
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+.container-fluid .row {
+	margin-top: 0;
+	font: bold 32px impact,sans-serif;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 25px;
+}
+
+h4 a {
+	color: white;
+}
+h4 a:hover,
+h4 a:focus {
+	color: #CC3333;
+	font-weight: bold;
+	text-decoration: none;
+}
+h4 a:active {
+	color: #eee;
+}
+.navbar-right a:after {
+  	content: "";
+  	position: absolute;
+  	width: 100%;
+ 	height: 2px;
+  	bottom: 0;
+  	left: 0;
+  	background-color: #fff;
+  	visibility: hidden;
+  -webkit-transform: scaleX(0);
+  	transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+}
+.navbar-right a:hover:after {
+  	visibility: visible;
+  -webkit-transform: scaleX(1);
+  	transform: scaleX(1); 
+}
+/*--- End General Styling ---*/
+
 /*--- Begin Header Styling ---*/
 .page-header {
 	margin: 0;
@@ -85,7 +143,7 @@
 }
 /*--- End Header Styling ---*/
 
-/*--- Begin Button Styling ---*/
+/*--- Begin Button Styling and Animation ---*/
 .sign-up_button {
 	font: bold 20px sans-serif;
 	color: white;
@@ -110,84 +168,6 @@
 	vertical-align: -10%;
 	padding-right: 5px;
 }
-/*--- End Button Styling ---*/
-
-/*--- Begin Button Animation ---*/
-.header-intro h4:hover,
-.header-intro h4:focus {
-	color: #CC3333;
-	font-weight: bold;
-	
-	-webkit-animation: cssAnimation 1s 1 ease-in-out;
-}
-	@-webkit-keyframes cssAnimation {
-		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
-		to { -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px); }
-}
-.header-intro h4:active {
-	color: #eee;
-}
-/*--- End Button Animation ---*/
-
-/*--- Begin Body Style ---*/
-body {
-    padding: 0;
-	margin: 0;
-    color: black;
-}
-html {
-	padding: 0;
-	margin: 0;
-}
-/*--- End Body Style ---*/
-
-/*--- Begin General Styling ---*/
-.container-fluid {
-	margin: 0;
-	padding: 0;
-}
-.container-fluid .row {
-	margin-top: 0;
-	font: bold 32px impact,sans-serif;
-	text-align: center;
-	width: 100%;
-}
-
-h4 a {
-	color: white;
-}
-h4 a:hover,
-h4 a:focus {
-	color: #CC3333;
-	font-weight: bold;
-	text-decoration: none;
-}
-h4 a:active {
-	color: #eee;
-}
-
-.navbar-right a:after {
-  	content: "";
-  	position: absolute;
-  	width: 100%;
- 	height: 2px;
-  	bottom: 0;
-  	left: 0;
-  	background-color: #fff;
-  	visibility: hidden;
-  -webkit-transform: scaleX(0);
-  	transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  	transition: all 0.3s ease-in-out 0s;
-}
-.navbar-right a:hover:after {
-  	visibility: visible;
-  -webkit-transform: scaleX(1);
-  	transform: scaleX(1); 
-}
-/*--- End General Styling ---*/
-
-/*--- Begin Button Styling ---*/
 .sign-up-and-save_button {
 	font: bold 20px sans-serif;
 	color: white;
@@ -202,7 +182,6 @@ h4 a:active {
 .sign-up-and-save_button:focus {
 	color: #CC3333;
 	font-weight: bold;
-	
 	-webkit-animation: cssAnimation 1s 1 ease-in-out;
 }
 	@-webkit-keyframes cssAnimation {
@@ -225,8 +204,7 @@ h4 a:active {
 .give-us-a-try_button:hover,
 .give-us-a-try_button:focus {
 	color: #CC3333;
-	font-weight: bold;
-	
+	font-weight: bold;	
 	-webkit-animation: cssAnimation 1s 1 ease-in-out;
 }
 	@-webkit-keyframes cssAnimation {
@@ -236,7 +214,20 @@ h4 a:active {
 .give-us-a-try_button:active {
 	color: #eee;
 }
-/*--- End Button Styling ---*/
+.header-intro h4:hover,
+.header-intro h4:focus {
+	color: #CC3333;
+	font-weight: bold;
+	-webkit-animation: cssAnimation 1s 1 ease-in-out;
+}
+	@-webkit-keyframes cssAnimation {
+		from { -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px); }
+		to { -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px); }
+}
+.header-intro h4:active {
+	color: #eee;
+}
+/*--- End Button Styling and Animation ---*/
 
 /*--- Begin Body Sections ---*/
 .product-description {
@@ -244,6 +235,9 @@ h4 a:active {
 	height: auto;
 	text-align: center;
 	padding: 50px 70px 80px 70px;
+}
+.product-description p {
+	padding: 25px 150px 25px 150px;
 }
 .video-section {
 	width: 100%;
@@ -264,6 +258,9 @@ h4 a:active {
 	content: url('images/arrow.png');
 	padding-right: 10px;
 }
+.col-md-5 {
+	padding: 10px 135px 10px 10px;
+}
 .testimonials {
 	width: 100%;
 	height: auto;
@@ -275,7 +272,7 @@ h4 a:active {
 	height: 170px;
 }
 .feature-blocks {
-	padding: 80px 70px 80px 70px;
+	padding: 90px 70px 20px 70px;
 }
 .feature-icons {
 	width: 65px;
@@ -283,7 +280,7 @@ h4 a:active {
 	padding-bottom: 20px;
 }
 .call-to-action {
-	padding: 50px 70px 80px 70px;
+	padding: 20px 70px 80px 70px;
 	width: 100%;
 	height: auto;
 	text-align: center;
@@ -348,7 +345,7 @@ h4 a:active {
 #navbar-footer {
 	vertical-align: middle;
 	line-height: 15px;
-	padding: 0px 50px 70px 350px;
+	padding: 0 50px 70px 350px;
 	font-weight: bold;
 	background: #000000;
 }
