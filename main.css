@@ -1,466 +1,456 @@
  /* Styles for Imaginary Product Page Customization */
-
  /*--- Begin Body Style ---*/
  
  body {
-   padding: 0;
-   margin: 0;
-   color: black;
-   font-size: 16px;
+      	 
+ 	padding: 0;
+ 	margin: 0;
+ 	color: black;
+ 	font-size: 16px;
  }
  
  html {
-   padding: 0;
-   margin: 0;
+ 	padding: 0;
+ 	margin: 0;
  }
  /*--- End Body Style ---*/
-
-
  /*--- Begin General Styling ---*/
  
  .container-fluid {
-   margin: 0;
-   padding: 0;
+ 	margin: 0;
+ 	padding: 0;
  }
  
  .container-fluid .row {
-   margin-top: 0;
-   font: bold 32px impact, sans-serif;
-   text-align: center;
-   width: 100%;
-   padding-bottom: 25px;
+ 	margin-top: 0;
+ 	font: bold 32px impact, sans-serif;
+ 	text-align: center;
+ 	width: 100%;
+ 	padding-bottom: 25px;
  }
  
  h4 a {
-   color: white;
+ 	color: white;
  }
  
  h4 a:hover,
  h4 a:focus {
-   color: #CC3333;
-   font-weight: bold;
-   text-decoration: none;
+ 	color: #CC3333;
+ 	font-weight: bold;
+ 	text-decoration: none;
  }
  
  h4 a:active {
-   color: #eee;
+ 	color: #eee;
  }
  
  .navbar-right a:after {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   background-color: #fff;
-   visibility: hidden;
-   -webkit-transform: scaleX(0);
-   transform: scaleX(0);
-   -webkit-transition: all 0.3s ease-in-out 0s;
-   transition: all 0.3s ease-in-out 0s;
+ 	content: "";
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 2px;
+ 	bottom: 0;
+ 	left: 0;
+ 	background-color: #fff;
+ 	visibility: hidden;
+ 	-webkit-transform: scaleX(0);
+ 	transform: scaleX(0);
+ 	-webkit-transition: all 0.3s ease-in-out 0s;
+ 	transition: all 0.3s ease-in-out 0s;
  }
  
  .navbar-right a:hover:after {
-   visibility: visible;
-   -webkit-transform: scaleX(1);
-   transform: scaleX(1);
+ 	visibility: visible;
+ 	-webkit-transform: scaleX(1);
+ 	transform: scaleX(1);
  }
  /*--- End General Styling ---*/
-
-
  /*--- Begin Header Styling ---*/
  
  .page-header {
-   margin: 0;
+ 	margin: 0;
  }
  
  .navbar-custom {
-   height: 85px;
-   background: rgba(0, 0, 0, 0.4);
-   border: none;
+ 	height: 85px;
+ 	background: rgba(0, 0, 0, 0.4);
+ 	border: none;
  }
  
  .navbar-brand img {
-   width: 65px;
-   height: auto;
-   vertical-align: middle;
-   margin-left: 15px;
+ 	width: 65px;
+ 	height: auto;
+ 	vertical-align: middle;
+ 	margin-left: 15px;
  }
  
  .navbar-custom:after {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   background-color: #666666;
-   visibility: hidden;
-   -webkit-transform: scaleX(0);
-   transform: scaleX(0);
-   -webkit-transition: all 0.3s ease-in-out 0s;
-   transition: all 0.3s ease-in-out 0s;
+ 	content: "";
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 2px;
+ 	bottom: 0;
+ 	left: 0;
+ 	background-color: #666666;
+ 	visibility: hidden;
+ 	-webkit-transform: scaleX(0);
+ 	transform: scaleX(0);
+ 	-webkit-transition: all 0.3s ease-in-out 0s;
+ 	transition: all 0.3s ease-in-out 0s;
  }
  
  .navbar-custom:hover:after {
-   visibility: visible;
-   -webkit-transform: scaleX(1);
-   transform: scaleX(1);
+ 	visibility: visible;
+ 	-webkit-transform: scaleX(1);
+ 	transform: scaleX(1);
  }
  
  #navbar-right {
-   vertical-align: middle;
-   line-height: 15px;
-   padding: 20px 50px 20px 0;
-   font-weight: bold;
+ 	vertical-align: middle;
+ 	line-height: 15px;
+ 	padding: 20px 50px 20px 0;
+ 	font-weight: bold;
  }
  
  #navbar-right li a {
-   font-family: sans-serif;
-   color: white;
-   display: block;
-   position: relative;
-   text-shadow: none;
+ 	font-family: sans-serif;
+ 	color: white;
+ 	display: block;
+ 	position: relative;
+ 	text-shadow: none;
  }
  
  #navbar-right li a:hover,
  #navbar-right li a:focus {
-   color: #ccc;
-   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-   background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+ 	color: #ccc;
+ 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+ 	background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
  }
  
  #navbar-right li a:active {
-   color: #ccc;
-   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
-   background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+ 	color: #ccc;
+ 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+ 	background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
  }
  
  .navbar-collapse ul li a {
-   color: black;
+ 	color: black;
  }
  
  .jumbotron {
-   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/desktop-keyboard-mouse-tablet.jpg);
-   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/desktop-keyboard-mouse-tablet.jpg);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
-   background-position: 50% 0;
-   margin: auto;
-   height: 100vh;
-   position: static;
+ 	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/desktop-keyboard-mouse-tablet.jpg);
+ 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/desktop-keyboard-mouse-tablet.jpg);
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-position: 50% 0;
+ 	margin: auto;
+ 	height: 100vh;
+ 	position: static;
  }
  
  .header-intro h1 {
-   font: bold 126px impact, sans-serif;
-   color: white;
-   position: absolute;
-   left: 25%;
-   top: 30%;
+ 	font: bold 126px impact, sans-serif;
+ 	color: white;
+ 	position: absolute;
+ 	left: 25%;
+ 	top: 30%;
  }
  
  .header-intro h2 {
-   font: 38px impact, sans-serif;
-   color: white;
-   position: absolute;
-   left: 32%;
-   top: 52%;
+ 	font: 38px impact, sans-serif;
+ 	color: white;
+ 	position: absolute;
+ 	left: 32%;
+ 	top: 52%;
  }
  /*--- End Header Styling ---*/
-
-
  /*--- Begin Button Styling and Animation ---*/
  
  .sign-up_button {
-   font: bold 20px sans-serif;
-   color: white;
-   position: absolute;
-   left: 33%;
-   top: 70%;
-   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-   padding: 15px 35px 15px 35px;
-   border-radius: 22px;
+ 	font: bold 20px sans-serif;
+ 	color: white;
+ 	position: absolute;
+ 	left: 33%;
+ 	top: 70%;
+ 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+ 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+ 	padding: 15px 35px 15px 35px;
+ 	border-radius: 22px;
  }
  
  .take-a-tour_button {
-   font: bold 20px sans-serif;
-   color: white;
-   position: absolute;
-   left: 55%;
-   top: 70%;
-   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-   padding: 15px 35px 15px 35px;
-   border-radius: 22px;
+ 	font: bold 20px sans-serif;
+ 	color: white;
+ 	position: absolute;
+ 	left: 55%;
+ 	top: 70%;
+ 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+ 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+ 	padding: 15px 35px 15px 35px;
+ 	border-radius: 22px;
  }
  
  .glyphicon-play-circle {
-   vertical-align: -10%;
-   padding-right: 5px;
+ 	vertical-align: -10%;
+ 	padding-right: 5px;
  }
  
  .sign-up-and-save_button {
-   font: bold 20px sans-serif;
-   color: white;
-   position: absolute;
-   left: 42%;
-   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-   padding: 15px 35px 15px 35px;
-   margin: 30px 0 30px 0;
-   border-radius: 22px;
+ 	font: bold 20px sans-serif;
+ 	color: white;
+ 	position: absolute;
+ 	left: 42%;
+ 	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ 	padding: 15px 35px 15px 35px;
+ 	margin: 30px 0 30px 0;
+ 	border-radius: 22px;
  }
  
  .sign-up-and-save_button:hover,
  .sign-up-and-save_button:focus {
-   color: #CC3333;
-   font-weight: bold;
-   -webkit-animation: cssAnimation 1s 1 ease-in-out;
+ 	color: #CC3333;
+ 	font-weight: bold;
+ 	-webkit-animation: cssAnimation 1s 1 ease-in-out;
  }
  
  @-webkit-keyframes cssAnimation {
-   from {
-     -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
-     transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
-   }
-   to {
-     -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
-     transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
-   }
+ 	from {
+ 		-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+ 		transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+ 	}
+ 	to {
+ 		-webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
+ 		transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
+ 	}
  }
  
  .sign-up-and-save_button:active {
-   color: #eee;
+ 	color: #eee;
  }
  
  .give-us-a-try_button {
-   font: bold 20px sans-serif;
-   color: white;
-   position: absolute;
-   left: 42%;
-   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-   padding: 15px 35px 15px 35px;
-   margin: 30px 0 30px 0;
-   border-radius: 22px;
+ 	font: bold 20px sans-serif;
+ 	color: white;
+ 	position: absolute;
+ 	left: 42%;
+ 	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ 	padding: 15px 35px 15px 35px;
+ 	margin: 30px 0 30px 0;
+ 	border-radius: 22px;
  }
  
  .give-us-a-try_button:hover,
  .give-us-a-try_button:focus {
-   color: #CC3333;
-   font-weight: bold;
-   -webkit-animation: cssAnimation 1s 1 ease-in-out;
+ 	color: #CC3333;
+ 	font-weight: bold;
+ 	-webkit-animation: cssAnimation 1s 1 ease-in-out;
  }
  
  @-webkit-keyframes cssAnimation {
-   from {
-     -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
-     transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
-   }
-   to {
-     -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
-     transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
-   }
+ 	from {
+ 		-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+ 		transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+ 	}
+ 	to {
+ 		-webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
+ 		transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
+ 	}
  }
  
  .give-us-a-try_button:active {
-   color: #eee;
+ 	color: #eee;
  }
  
  .header-intro h4:hover,
  .header-intro h4:focus {
-   color: #CC3333;
-   font-weight: bold;
-   -webkit-animation: cssAnimation 1s 1 ease-in-out;
+ 	color: #CC3333;
+ 	font-weight: bold;
+ 	-webkit-animation: cssAnimation 1s 1 ease-in-out;
  }
  
  @-webkit-keyframes cssAnimation {
-   from {
-     -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
-     transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
-   }
-   to {
-     -webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
-     transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
-   }
+ 	from {
+ 		-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+ 		transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+ 	}
+ 	to {
+ 		-webkit-transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
+ 		transform: rotate(0deg) scale(1.03) skew(0deg) translate(0px);
+ 	}
  }
  
  .header-intro h4:active {
-   color: #eee;
+ 	color: #eee;
  }
  /*--- End Button Styling and Animation ---*/
-
-
  /*--- Begin Body Sections ---*/
  
  .product-description {
-   width: 100%;
-   height: auto;
-   text-align: center;
-   padding: 50px 70px 80px 70px;
+ 	width: 100%;
+ 	height: auto;
+ 	text-align: center;
+ 	padding: 50px 70px 80px 70px;
  }
  
  .product-description p {
-   padding: 25px 150px 25px 150px;
+ 	padding: 25px 150px 25px 150px;
  }
  
  .video-section {
-   width: 100%;
-   height: auto;
-   padding: 70px 0 70px 0;
+ 	width: 100%;
+ 	height: auto;
+ 	padding: 70px 0 70px 0;
  }
  
  .our-features {
-   font: 42px sans-serif;
-   color: white;
+ 	font: 42px sans-serif;
+ 	color: white;
  }
  
  .list-group-item {
-   background: #666666;
-   border: none;
-   width: 325px;
-   color: white;
+ 	background: #666666;
+ 	border: none;
+ 	width: 325px;
+ 	color: white;
  }
  
  .list-group li::before {
-   content: url('images/arrow.png');
-   padding-right: 10px;
+ 	content: url('images/arrow.png');
+ 	padding-right: 10px;
  }
  
  .col-md-5 {
-   padding: 10px 135px 10px 10px;
+ 	padding: 10px 135px 10px 10px;
  }
  
  .testimonials {
-   width: 100%;
-   height: auto;
-   padding: 0;
-   background: #62CDB7;
+ 	width: 100%;
+ 	height: auto;
+ 	padding: 0;
+ 	background: #62CDB7;
  }
  
  .panel-body {
-   font: 16px arial, sans-serif;
-   height: 170px;
+ 	font: 16px arial, sans-serif;
+ 	height: 170px;
  }
  
  .feature-blocks {
-   padding: 90px 70px 20px 70px;
+ 	padding: 90px 70px 20px 70px;
  }
  
  .feature-icons {
-   width: 65px;
-   height: auto;
-   padding-bottom: 20px;
+ 	width: 65px;
+ 	height: auto;
+ 	padding-bottom: 20px;
  }
  
  .call-to-action {
-   padding: 20px 70px 80px 70px;
-   width: 100%;
-   height: auto;
-   text-align: center;
+ 	padding: 20px 70px 80px 70px;
+ 	width: 100%;
+ 	height: auto;
+ 	text-align: center;
  }
  
  .bg-gray {
-   background: #666666;
+ 	background: #666666;
  }
  /*--- End Body Sections ---*/
-
-
  /*--- Begin Footer ---*/
  
  .footer {
-   margin: 70px 0 0 0;
-   padding: 30px 70px 20px 70px;
-   width: 100%;
-   height: auto;
-   text-align: center;
-   background: #000000;
-   color: #ffffff;
+ 	margin: 70px 0 0 0;
+ 	padding: 30px 70px 20px 70px;
+ 	width: 100%;
+ 	height: auto;
+ 	text-align: center;
+ 	background: #000000;
+ 	color: #ffffff;
  }
  
  .footer p {
-   clear: left;
+ 	clear: left;
  }
  
  .footer .container-fluid .row {
-   font: 16px sans-serif;
-   line-height: 1.6;
-   padding-top: 20px;
-   padding-bottom: 30px;
+ 	font: 16px sans-serif;
+ 	line-height: 1.6;
+ 	padding-top: 20px;
+ 	padding-bottom: 30px;
  }
  
  .footer-brand img {
-   width: 85px;
-   height: auto;
+ 	width: 85px;
+ 	height: auto;
  }
  
  .footer-brand {
-   text-align: left;
+ 	text-align: left;
  }
  
  .footer li {
-   list-style-type: none;
+ 	list-style-type: none;
  }
  
  .social-icons ul li {
-   display: inline;
-   padding: 0;
+ 	display: inline;
+ 	padding: 0;
  }
  
  .navbar-footer a:after {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   background-color: #fff;
-   visibility: hidden;
-   -webkit-transform: scaleX(0);
-   transform: scaleX(0);
-   -webkit-transition: all 0.3s ease-in-out 0s;
-   transition: all 0.3s ease-in-out 0s;
+ 	content: "";
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 2px;
+ 	bottom: 0;
+ 	left: 0;
+ 	background-color: #fff;
+ 	visibility: hidden;
+ 	-webkit-transform: scaleX(0);
+ 	transform: scaleX(0);
+ 	-webkit-transition: all 0.3s ease-in-out 0s;
+ 	transition: all 0.3s ease-in-out 0s;
  }
  
  .navbar-footer a:hover:after {
-   visibility: visible;
-   -webkit-transform: scaleX(1);
-   transform: scaleX(1);
+ 	visibility: visible;
+ 	-webkit-transform: scaleX(1);
+ 	transform: scaleX(1);
  }
  
  #navbar-footer {
-   vertical-align: middle;
-   line-height: 15px;
-   padding: 0 50px 70px 350px;
-   font-weight: bold;
-   background: #000000;
+ 	vertical-align: middle;
+ 	line-height: 15px;
+ 	padding: 0 50px 70px 350px;
+ 	font-weight: bold;
+ 	background: #000000;
  }
  
  #navbar-footer li a {
-   font-family: sans-serif;
-   color: white;
-   display: block;
-   position: relative;
-   text-shadow: none;
+ 	font-family: sans-serif;
+ 	color: white;
+ 	display: block;
+ 	position: relative;
+ 	text-shadow: none;
  }
  
  #navbar-footer li a:hover,
  #navbar-footer li a:focus {
-   color: #ccc;
-   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-   background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+ 	color: #ccc;
+ 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+ 	background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
  }
  
  #navbar-footer li a:active {
-   color: #ccc;
-   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
-   background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+ 	color: #ccc;
+ 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+ 	background: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
  }
  
  .footer a {
-   color: #828282;
+ 	color: #828282;
  }
  /*--- End Footer ---*/
